@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @media only screen and (max-width: 375px) {
+        .main {
+          margin: 1rem;
+        }
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+      }
+
+      .container-main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        background-color: hsl(0, 0%, 8%);
+        font-family: Inter;
+      }
+
+      .main {
+        width: 23.4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.6rem;
+        padding: 2.4rem;
+        border-radius: 0.8rem;
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(0, 0%, 12%);
+
+        img {
+          width: 6rem;
+          height: 6rem;
+          border-radius: 100%;
+        }
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+
+        .name {
+          font-size: 1.5rem;
+          font-weight: 700;
+        }
+
+        .address {
+          color: hsl(75, 94%, 57%);
+          font-weight: 700;
+        }
+      }
+
+      .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        flex-shrink: inherit;
+        width: 100%;
+
+        .link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.7rem;
+          border-radius: 0.5rem;
+          background-color: hsl(0, 0%, 20%);
+          font-weight: 600;
+        }
+
+        .link:hover {
+          color: black;
+          background-color: hsl(75, 94%, 57%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-main Inter">
+      <div class="main">
+        <img src="/assets/images/avatar-jessica.jpeg" />
+        <div class="info">
+          <span class="name"> Jessica Randall </span>
+          <span class="address"> London, United Kingdom </span>
+        </div>
+        <span> "Front-end developer and avid reader." </span>
+        <div class="links">
+          <div class="link">
+            <a>Github</a>
+          </div>
+          <div class="link">
+            <a>Frontend Mentor</a>
+          </div>
+          <div class="link">
+            <a>LinkedIn</a>
+          </div>
+          <div class="link">
+            <a>Twitter</a>
+          </div>
+          <div class="link">
+            <a>Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
